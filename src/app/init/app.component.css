@@ -1,4 +1,12 @@
 .titleHeder{
      color: red;    
-     font-variant: small-caps;   
+     /*font-variant: small-caps;*/   
 }
+
+div.container {
+    min-height: 25em;
+   /* display: table-cell;*/
+    vertical-align: middle ;
+}
+
+
