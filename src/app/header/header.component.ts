@@ -7,29 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-
-
-
-
  private  title : string;
-
-  private displayName():void{
-       
+ 
+ 
+private displayName():void{
+      
   var  hour : number  = (new Date).getHours();
        
-  if(hour >=0 &&  hour <=12){
-        this.title = 'Good Morning....!';
-  }else if(hour >=12 &&  hour <= 15){}
-        this.title = 'Good Afternoon....!';
-  }else (){
-        this.title = 'Good Evening....!';
-  }
+      if(hour >=0 &&  hour <=12){
+            this.title = 'Good Morning....!';
+      }else if(hour >=12 &&  hour <= 15){
+            this.title = 'Good Afternoon....!';
+      }else {
+            this.title = 'Good Evening....!';
+      }
+}
 
-
-  constructor(){
-      setInterval(()=>this.displayName(),1000);
-  }
-
+      constructor(){
+            setInterval(()=>this.displayName(),1000);
+      }
+      
 
 
 
