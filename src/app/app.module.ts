@@ -11,6 +11,10 @@ import { RoutingComponent } from './routing/routing.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import{RoutingModule} from './routing/routing.module';
+import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { LanguageComponent } from './language/language.component';
+import { FrameworkComponent } from './framework/framework.component';
+import { DatabaseComponent } from './database/database.component';
 
 @NgModule({
   declarations: [
@@ -20,21 +24,21 @@ import{RoutingModule} from './routing/routing.module';
     ContentComponent,
     RoutingComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    LanguageComponent,
+    FrameworkComponent,
+    DatabaseComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RoutingModule
+    RoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
-
-
-
-
   
 }
