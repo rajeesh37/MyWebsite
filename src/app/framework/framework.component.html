@@ -21,7 +21,7 @@
   </div>-->
   
    <!-- <img class="diagram" src="./assets/images/techUsageBlock.png" alt="Smiley face">-->
-	<div class="col-md-8">
+	<div class="col-md-6">
  <div style="display: block">
               <canvas baseChart
                      [datasets]="barChartData" 
@@ -34,3 +34,15 @@
              </canvas>
           </div>
 	</div>
+  <div class="col-md-6">
+<div style="display: block">
+  <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)"></canvas>
+</div>
+
+
+  </div>

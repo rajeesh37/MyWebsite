@@ -78,7 +78,13 @@ public barChartOptions:any = {
     console.log(e);
   }
 
+//--------------------------------------------Pie Chart Implementation starting-------------------------
+ // Pie
+  public pieChartLabels:string[] = ['Windows', 'Linux'];
+  public pieChartData:number[] = [700, 300];
+  public pieChartType:string = 'pie';
 
+//--------------------------------------------pie chart ending------------------------------------------
   
   ngOnInit() {
   }
