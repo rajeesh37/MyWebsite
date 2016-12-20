@@ -20,4 +20,17 @@
     <button (click)="randomizeType()" style="display: inline-block">Toggle</button>
   </div>-->
   
-    <img class="diagram" src="./assets/images/techUsageBlock.png" alt="Smiley face">
+   <!-- <img class="diagram" src="./assets/images/techUsageBlock.png" alt="Smiley face">-->
+	<div class="col-md-8">
+ <div style="display: block">
+              <canvas baseChart
+                     [datasets]="barChartData" 
+                     [labels]="barChartLabels"
+                     [options]="barChartOptions" 
+                     [legend]="barChartLegend"
+                     [chartType]="barChartType" 
+                     (chartHover)="chartHovered($event)" 
+                     (chartClick)="chartClicked($event)">
+             </canvas>
+          </div>
+	</div>

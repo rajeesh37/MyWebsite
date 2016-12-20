@@ -21,14 +21,14 @@ public barChartOptions:any = {
 
 
   //public barChartLabels:string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
-  public barChartLabels:string[] = ['Java', 'Groovy', 'Javascript', 'Typescript', 'c','c++', 'c#', 'php'];
+  public barChartLabels:string[] = ['Java', 'Groovy', 'Javascript', 'Typescript', 'c','c++', 'php'];
   public barChartType:string = 'bar';
   public barChartLegend:boolean = true;
 
 
   public barChartData:any[] = [
   // {data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A'},
-    {data: [80, 85, 75, 75, 40, 40, 25, 25], label: 'Proficiency in Programming Languages'}
+    {data: [80, 85, 75, 75, 40, 40, 25], label: 'Proficiency in Programming Languages'}
   ];
 
 
