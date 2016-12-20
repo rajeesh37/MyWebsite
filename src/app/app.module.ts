@@ -15,6 +15,11 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 import { LanguageComponent } from './language/language.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { DatabaseComponent } from './database/database.component';
+import { BiographyComponent } from './biography/biography.component';
+import { AcademicComponent } from './academic/academic.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ContactComponent } from './contact/contact.component';
+import { CommunicationComponent } from './communication/communication.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { DatabaseComponent } from './database/database.component';
     ProfileComponent,
     LanguageComponent,
     FrameworkComponent,
-    DatabaseComponent
+    DatabaseComponent,
+    BiographyComponent,
+    AcademicComponent,
+    ExperienceComponent,
+    ContactComponent,
+    CommunicationComponent
   ],
   imports: [
     BrowserModule,

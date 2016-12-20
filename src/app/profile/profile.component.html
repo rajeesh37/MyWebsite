@@ -1,64 +1,79 @@
-<!--<p>
-  profile works!
-</p>
--->
-<!--
-<div class="panel panel-default">
-<div class="panel-body">
-<div>-->
-<!--  <div style="display: block">
-    <canvas baseChart
-            [datasets]="barChartData"
-            [labels]="barChartLabels"
-            [options]="barChartOptions"
-            [legend]="barChartLegend"
-            [chartType]="barChartType"
-            (chartHover)="chartHovered($event)"
-            (chartClick)="chartClicked($event)"></canvas>
-  </div>-->
-<!-- <button (click)="randomize()">Update</button>-->
-<!--</div>
-  </div>
-</div>-->
-
-
+ <div class="panel-body">
 <div class="panel-group">
+	
   <div class="panel panel-default">
-    <div class="panel-heading"><strong>Personal Info</strong></div>
-    <div class="panel-body">Panel Content</div>
-  </div>
+		<div class="panel-heading">
+			<strong>Personal Summary</strong>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<app-biography></app-biography>
+			</div>
+		</div>
+	</div>
+
+
   <div class="panel panel-default">
-    <div class="panel-heading"><strong>Technical Skills</strong></div>
-    <div class="panel-body">
-      <div class="row">
-          <div class="col-md-6">
-              <app-language></app-language>
-          </div>
-            <div class="col-md-6">
-              <app-database></app-database>
-            </div>
+		<div class="panel-heading">
+			<strong>Industry Experience</strong>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+      <div class="panel panel-default">
+           <app-experience></app-experience>
       </div>
-    </div>
-    
-  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Technical Skills</strong>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-md-6">
+					<app-language></app-language>
+				</div>
+				<div class="col-md-6">
+					<app-database></app-database>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 
-  <div class="panel panel-default">
-   <!-- <div class="panel-heading">Technical Skills</div>-->
-    <div class="panel-body">
-      <div class="row">
-           <app-framework></app-framework>
-      </div>
-    </div>
-  </div>
+	<div class="panel panel-default">
+		<!-- <div class="panel-heading">Technical Skills</div>-->
+		<div class="panel-body">
+			<div class="row">
+				<app-framework></app-framework>
+			</div>
+		</div>
+	</div>
 
- 
+
+	<div class="panel panel-default">
+		 <div class="panel-heading"><strong>Academic & Certifications</strong></div>
+		<div class="panel-body">
+			<div class="row">
+     <app-academic></app-academic>
+			</div>
+		</div>
+	</div>
+
+
+<div class="panel panel-default">
+		 <div class="panel-heading"><strong>Communication & InterPersonal Skills</strong></div>
+		<div class="panel-body">
+			<div class="row">
+  				  <app-communication></app-communication>
+			</div>
+		</div>
+	</div>
+
+
 </div>
-<!-- <div class="panel panel-default">
-    <div class="panel-body">Panel Content</div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">Technical Skills</div>
-    <app-language></app-language>
-  </div>-->
 
+ </div>

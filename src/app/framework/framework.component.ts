@@ -33,8 +33,8 @@ public lineChartData:Array<any> = [
   public pieChartType:string = 'pie';
   public labels: Array<any>=['2013','2014','2015','2016','2017']
   // Pie
-  public pieChartLabels:string[] = ['Download Sales', 'In-Store Sales', 'Mail Sales'];
-  public pieChartData:number[] = [300, 500, 100];
+  public pieChartLabels:string[] = ['Grails', 'Spring', 'Angular', 'Hibernate'];
+  public pieChartData:number[] = [350, 350, 250,50];
 
   public randomizeType():void {
     this.lineChartType = this.lineChartType === 'line' ? 'bar' : 'line';
