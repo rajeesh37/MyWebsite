@@ -1,0 +1,76 @@
+<!--<p>
+  contact works!
+</p>-->
+ <div class="panel-body">
+<div class="panel-group">
+	
+  <div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Locate Me!</strong>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<!-- this creates a google map on the page with the given lat/lng from -->
+					<!-- the component as the initial center of the map: -->
+
+					<sebm-google-map [latitude]="lat" [longitude]="lng">
+					<sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+					</sebm-google-map>
+			</div>
+		</div>
+	</div>
+
+
+  <div class="panel panel-default">
+		<div class="panel-heading">
+			<strong>Contact Me!</strong>
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<form class="form-horizontal">
+						<fieldset>
+
+						<!-- Form Name -->
+					
+
+						<!-- Text input-->
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="name">Your Name</label>  
+							<div class="col-md-4">
+									<input id="name" name="name" placeholder="" class="form-control input-md" type="text">
+							</div>
+						</div>
+						<!-- Textarea -->
+						<div class="form-group">
+						<label class="col-md-4 control-label" for="query">Query</label>
+						<div class="col-md-4">                     
+							<textarea class="form-control" id="query" name="query"></textarea>
+						</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-4 control-label" for="button1id"></label>
+							<div class="col-md-8">
+								<button id="submi" name="submit"  (click)="modal.open()" class="btn btn-success">Submit</button>
+								<button id="cancel" name="cance" (click)="modal.open()" class="btn btn-danger">Cancel</button>
+							</div>
+						</div>
+
+						</fieldset>
+				</form>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+
+ </div>
+
+
+    <modal #modal>
+    <modal-header [show-close]="true">
+        <h4 class="modal-title"><strong>Thanks for Contacting Me!</strong></h4>
+    </modal-header>
+	<modal-body><p>This page is under Construction...Please try later...!!</p></modal-body>

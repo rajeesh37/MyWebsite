@@ -1,0 +1,46 @@
+  <!--<div class="col-md-12">
+
+    <canvas baseChart
+                [datasets]="lineChartData"
+                [labels]="labels"
+                [options]="lineChartOptions"
+                [chartType]="lineChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+  </div>-->
+ <!-- <div class="col-md-6">
+    <canvas baseChart
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas>
+  </div>-->
+<!--  <div class="col-md-12 text-center" style="margin-top: 10px;height: 50%">
+    <button (click)="randomizeType()" style="display: inline-block">Toggle</button>
+  </div>-->
+  
+   <!-- <img class="diagram" src="./assets/images/techUsageBlock.png" alt="Smiley face">-->
+	<div class="col-md-6">
+ <div style="display: block">
+              <canvas baseChart
+                     [datasets]="barChartData" 
+                     [labels]="barChartLabels"
+                     [options]="barChartOptions" 
+                     [legend]="barChartLegend"
+                     [chartType]="barChartType" 
+                     (chartHover)="chartHovered($event)" 
+                     (chartClick)="chartClicked($event)">
+             </canvas>
+          </div>
+	</div>
+  <div class="col-md-6">
+        <div style="display: block">
+          <canvas baseChart
+                  [data]="pieChartData"
+                  [labels]="pieChartLabels"
+                  [chartType]="pieChartType"
+                  (chartHover)="chartHovered($event)"
+                  (chartClick)="chartClicked($event)"></canvas>
+        </div>
+  </div>
