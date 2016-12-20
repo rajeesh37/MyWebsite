@@ -16,11 +16,11 @@ private displayName():void{
   var  hour : number  = (new Date).getHours();
        
       if(hour >=0 &&  hour <=12){
-            this.title = 'Good Morning....!';
+            this.title = 'Thanks for visiting in this Morning..!';
       }else if(hour >=12 &&  hour <= 15){
-            this.title = 'Good Afternoon....!';
+            this.title = 'Thanks for visiting in this Afternoon..!';
       }else {
-            this.title = 'Good Evening....!';
+            this.title = 'Thanks for visiting in this Evening..!';
       }
 }
 

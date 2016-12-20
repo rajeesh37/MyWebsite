@@ -20,6 +20,10 @@ import { AcademicComponent } from './academic/academic.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
 import { CommunicationComponent } from './communication/communication.component';
+import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
+import {AgmCoreModule } from 'angular2-google-maps/core';
+
+
 
 @NgModule({
   declarations: [
@@ -44,7 +48,11 @@ import { CommunicationComponent } from './communication/communication.component'
     FormsModule,
     HttpModule,
     RoutingModule,
-    ChartsModule
+    ChartsModule,
+    Ng2Bs3ModalModule,
+    AgmCoreModule.forRoot({
+    apiKey: 'YOUR_key'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
